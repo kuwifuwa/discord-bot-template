@@ -17,6 +17,6 @@ def main() -> None:
     client = arc.GatewayClient(bot)
 
     # Organize features into extensions via hikari-arc
-    _ = client.load_extension("discord_bot_template.extensions.honk")
+    _ = client.load_extension("discord_bot_template.ext.honk")
 
     bot.run()
