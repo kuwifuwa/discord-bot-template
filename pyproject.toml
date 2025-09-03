@@ -1,0 +1,30 @@
+[project]
+name = "discord-bot-template"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "kuwifuwa", email = "135856468+kuwifuwa@users.noreply.github.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "hikari>=2.3.2",
+    "hikari-arc>=2.1.0",
+]
+
+[project.scripts]
+discord-bot-template = "discord_bot_template:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "basedpyright>=1.29.1",
+    "ruff>=0.11.10",
+]
+
+[tool.basedpyright]
+reportAny = false
+reportExplicitAny = false
